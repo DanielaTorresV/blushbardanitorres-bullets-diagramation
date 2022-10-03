@@ -1,5 +1,6 @@
 import React from "react"
 import { BulletsSchema } from "../BulletTypes"
+import Bullet from "../Bullet"
 
 export const getBulletsAsTSXList = (
     bullets: BulletsSchema
@@ -7,15 +8,21 @@ export const getBulletsAsTSXList = (
   return(
     <>
     {bullets.map((bullet:any, index) => {
+      console.log("MiBullets es: ", bullet)
       return(
-        <div key={index}>
-          <a
-          href={bullet?.link?.url ? bullet?.link?.url : "" }
-          >
-            <p>{bullet?.titleBullet}</p>
-            <p>{bullet?.image}</p>
-          </a>
-        </div>
+        <Bullet
+          key={index}
+          src = {bullet.image}
+          titleBullet = {bullet.titleBullet}
+          link = { bullet.link ? bullet.link : {
+            url: "",
+            attributeNoFollow: false,
+            attributeTitle: "",
+            openNewTab: false,
+            newTab: false,
+            }
+          }
+        />
         )
       })
     }

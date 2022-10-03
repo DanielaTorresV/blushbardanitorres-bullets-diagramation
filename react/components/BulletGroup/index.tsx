@@ -27,11 +27,11 @@ const BulletGroup = ({
     <>
     {isMobile ?
       <div>
-        {bulletsContent}
+        Estamos en Mobile!!
       </div>
       :
       <div>
-        Estamos en Desktop!!
+        {bulletsContent}
       </div>
     }
     </>
