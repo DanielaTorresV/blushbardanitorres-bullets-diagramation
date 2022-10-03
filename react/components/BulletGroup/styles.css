@@ -1,0 +1,21 @@
+.bullet__item {
+  margin-left: 15px;
+}
+
+.bullet__item--title {
+  text-align: center;
+}
+
+.bullet__item, .bullet__item--image {
+  width: 100px;
+}
+
+.bullet__item--link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 760px) {
+  .bullet__item, .bullet__item--image {
+    width: 150px;
+  }
+}
