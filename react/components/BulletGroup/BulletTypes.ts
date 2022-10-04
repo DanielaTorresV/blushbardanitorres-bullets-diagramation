@@ -8,5 +8,5 @@ export type BulletsSchema = Array<{
     attributeNoFollow?: boolean
     attributeTitle?: string
     openNewTab?: boolean
-    newTab: boolean
+    newTab?: boolean
   }

@@ -4,10 +4,8 @@ import Bullet from "../Bullet"
 
 export const getBulletsAsTSXList = (
     bullets: BulletsSchema
-) => {
-  return(
-    <>
-    {bullets.map((bullet:any, index) => {
+) => (
+  bullets.map((bullet:any, index) => {
       console.log("MiBullets es: ", bullet)
       return(
         <Bullet
@@ -25,7 +23,4 @@ export const getBulletsAsTSXList = (
         />
         )
       })
-    }
-  </>
   )
-}

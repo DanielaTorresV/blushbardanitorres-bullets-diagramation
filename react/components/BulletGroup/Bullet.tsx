@@ -30,7 +30,8 @@ const Bullet = ({src, titleBullet, link}: Props) => {
           src= {src}
           alt= {titleBullet}
         />
-        <p className= {handles["bullet__item--title"]}>
+        <p
+          className= {handles["bullet__item--title"]}>
           {titleBullet}
         </p>
       </Link>
