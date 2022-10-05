@@ -18,8 +18,6 @@ const BulletGroup = ({
   const { isMobile } = useDevice();
   const { list } = useListContext() || [];
 
-  console.log("bullets", bullets)
-
   const bulletsContent = getBulletsAsTSXList(bullets);
   const newListContextValue = list.concat(bulletsContent);
 

@@ -6,7 +6,6 @@ export const getBulletsAsTSXList = (
     bullets: BulletsSchema
 ) => (
   bullets.map((bullet:any, index) => {
-      console.log("MiBullets es: ", bullet)
       return(
         <Bullet
           key={index}
