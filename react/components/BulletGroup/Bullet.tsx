@@ -5,9 +5,9 @@ import { useCssHandles } from "vtex.css-handles"
 import "./styles.css"
 
 type Props = {
-  src: string
-  titleBullet: string
-  link: LinkProps
+  src: string,
+  titleBullet: string,
+  link: LinkProps,
 }
 
 const Bullet = ({src, titleBullet, link}: Props) => {
