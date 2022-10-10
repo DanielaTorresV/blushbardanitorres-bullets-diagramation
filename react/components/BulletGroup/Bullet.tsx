@@ -7,7 +7,7 @@ import "./styles.css"
 type Props = {
   src: string,
   titleBullet: string,
-  link: LinkProps,
+  link: LinkProps
 }
 
 const Bullet = ({src, titleBullet, link}: Props) => {
