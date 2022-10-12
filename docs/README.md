@@ -1,4 +1,4 @@
-### Bullets Diagramation
+# Bullets Diagramation
 
 This component show a list-context to display a slider in desktop and other view on mobile.
 
